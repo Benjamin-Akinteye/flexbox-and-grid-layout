@@ -43,30 +43,34 @@ main div{
 	width: 145%;
 	height: 31vh;
 }
-.item-d{
+.item-d, .item-e{
 	background-color:blue;
-	grid-area:d;
 	width: 75%;
 	position: relative;
-	left: 105px;
+	left: 97px;
 	height: 15vh;
 
+}
+.item-d{
+grid-area:d;
 }
 .item-e{
-	background-color:blue;
 	grid-area:e;
-	width: 75%;
-	position: relative;
-	left: 105px;
-	height: 15vh;
 }
+
 a{
-	background-color:hsl(184, 100%, 22%) ;
-	text-decoration: none;
-	padding: 20px;
 	position: absolute;
 	left:50%;
-	border-radius: 10px;
-	color: hsl(0, 0%, 95%);
+	top: 10%;
 
+}
+@media screen and (max-width: 375px){
+	.item-d, .item-e{
+	background-color:blue;
+	width: 70%;
+	position: relative;
+	left: 45px;
+	height: 15vh;
+
+}
 }

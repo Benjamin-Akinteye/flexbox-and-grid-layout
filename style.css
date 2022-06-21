@@ -6,7 +6,9 @@
 body{
 	background-color: hsl(0, 0%, 95%);
 }
-main{
+
+@media screen and (max-width: 1440px){
+	main{
 	width: 50%;
 	margin: auto;
 	display: flex;
@@ -16,11 +18,20 @@ main{
 	position: relative;
 	top: 150px;
 }
-@media screen and (max-width: 600px){
+
+}
+
+@media screen and (max-width: 375px){
 	main{
-		width: 100%;
-		height: 100vh;
-	}
+	width: 50%;
+	margin: auto;
+	display: block;
+	justify-content: center;
+	align-content: center;
+	height: 70vh;
+	position: relative;
+	top: 100px;
+}
 }
 
 .sedans{
@@ -61,6 +72,15 @@ button{
 	left: 30px;
 	top: 60px;
 }
+
+@media screen and (max-width: 375px){
+button{
+	justify-content: center;
+	align-content: center;
+	left: 30px;
+	top: 25px;
+}
+}
 .sedans button{
 	
 	color:hsl(31, 77%, 52%);
@@ -76,12 +96,8 @@ button{
 	color:hsl(179, 100%, 13%);
 }
 a{
-	background-color:hsl(184, 100%, 22%) ;
-	text-decoration: none;
-	padding: 20px;
 	position: absolute;
 	left:50%;
-	border-radius: 10px;
-	color: hsl(0, 0%, 95%);
+	top: 10%;
 
 }
