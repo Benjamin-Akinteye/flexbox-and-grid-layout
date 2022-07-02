@@ -15,7 +15,7 @@ main{
 	'a a b'
 	'c d d'
 	'c e e';
-	gap: 5px;
+	gap: 15px;
 	width: 50%;
 	margin: auto;
 	
@@ -41,11 +41,11 @@ main div{
 	background-color:greenyellow;
 	grid-area:c;
 	width: 145%;
-	height: 31vh;
+	height: 33vh;
 }
 .item-d, .item-e{
 	background-color:blue;
-	width: 75%;
+	width: 77%;
 	position: relative;
 	left: 97px;
 	height: 15vh;
@@ -67,6 +67,7 @@ a{
 @media screen and (max-width: 375px){
 	.item-d, .item-e{
 	background-color:blue;
+	gap: 5px;
 	width: 70%;
 	position: relative;
 	left: 45px;
